@@ -3,7 +3,7 @@ const app = express();
 const http = require('http').Server(app);
 const io = require('socket.io')(http, {
   cors: {
-    origin: "http://127.0.0.1:5500, *",
+    origin: "http://127.0.0.1:5500",
     methods: ["GET", "POST"]
   }
 });
